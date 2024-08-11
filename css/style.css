@@ -9,9 +9,24 @@ body {
     display: flex;
     flex-direction: column;
     
-    gap: 10px;
+    gap: 0px;
+    
+    background-color: #d3cfcf;
 }
 
+main {
+    margin: 8px 0px;
+}
+header {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+    height: 80px;
+}
+header > img {
+    height: 80px;
+    width: auto;
+}
 #menu {
     display: flex;
     width: 100%;
@@ -20,10 +35,16 @@ body {
 }
 
 #menu > a {
-    width: 1%;
+    width: 100%;
     padding: 8px;
     background-color: gray;
     text-align: center;
+    text-transform: uppercase;
+    color: #2c2c2c;
+}
+#menu > a:hover {
+    background-color: #afafaf;
+    
 }
 
 #items {
@@ -33,18 +54,18 @@ body {
     justify-content: center;
     gap: 10px;
 }
-
-.item {
+item-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 250px;
+    width: 200x;
     height: 250px;
-    border-style: solid;
-    border-color: gray;
+    background-color: white;
+    padding: 10px;
+    border: solid;
     border-width: thin;
-    border-radius: 5px;
+    border-color: #bfbfbf;
     overflow: hidden;
 }
 
@@ -52,4 +73,17 @@ body {
     width: 200px;
     height: 200px;
     position: relative;
+}
+
+item-card > .options > button {
+    background-color: lightgray;
+    color: #242424;
+    border-radius: 0;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+item-card > .options > button:hover {
+    background-color: #e2e2e2;
 }
