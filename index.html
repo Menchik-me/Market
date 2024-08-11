@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/components.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1> My shop </h1>
+        </header>
+        
+        <div id="menu">
+            <a>главная</a>
+            <a>поиск</a>
+            <a>корзина</a>
+            <a>помощь</a>
+        </div>
+        <div id="items">
+            
+        </div>
+        <script>
+            let items = document.querySelector("#items");
+            items.append(new ItemCard("Ручка", "https://pilotrus.ru/wa-data/public/shop/products/57/01/157/images/7026/7026.750@2x.jpg", 18)); 
+            items.append(new ItemCard("Цветные карандаши", "https://img.vkusvill.ru/pim/images/site_LargeWebP/930eca3d-0e70-498b-b1e3-048001aebbd7.webp?1691008042.416", 110));
+            items.append(new ItemCard("Фломастер", "https://stat.rs24.ru/ctlg/edi/wm/LEGRAND/039/039598/039598_1.jpeg",55));
+            items.append(new ItemCard("Ластик", "https://statum.ru/upload/iblock/457/uah5q5a7emf7kjpmgbolwal4t17uhwxz.jpg", 25));
+            items.append(new ItemCard("Клей", "https://www.orionn.ru/preview/type_prodbig/files/product/590/1_img.jpg", 43));
+            items.append(new ItemCard("Цветная бумага", "https://bumaga-s.ru/productImage/271337x550y550.jpg", 99));
+            //items.children[0].changePrice(255)
+        </script>
+        
+        
+    </body>    
+
+</html>
