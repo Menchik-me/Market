@@ -5,6 +5,7 @@
     </head>
     <body>
         <header>
+            <img src="images/logo.png">
             <h1> My shop </h1>
         </header>
         
@@ -14,9 +15,11 @@
             <a>корзина</a>
             <a>помощь</a>
         </div>
+        <main>
         <div id="items">
             
         </div>
+        </main>
         <script>
             let items = document.querySelector("#items");
             items.append(new ItemCard("Ручка", "https://pilotrus.ru/wa-data/public/shop/products/57/01/157/images/7026/7026.750@2x.jpg", 18)); 
@@ -26,9 +29,10 @@
             items.append(new ItemCard("Клей", "https://www.orionn.ru/preview/type_prodbig/files/product/590/1_img.jpg", 43));
             items.append(new ItemCard("Цветная бумага", "https://bumaga-s.ru/productImage/271337x550y550.jpg", 99));
             //items.children[0].changePrice(255)
+         
         </script>
         
-        
+       
     </body>    
 
 </html>
